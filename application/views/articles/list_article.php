@@ -2,18 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>List of Article</title>
+    <?php $this->load->view('_partials/head.php'); ?>
 </head>
 
 <body>
+    <?php $this->load->view('_partials/navbar.php'); ?>
+
     <h1>List Artikel</h1>
     <ul>
-        <?php foreach ($articles as $article): ?>
+        <?php foreach ($articles as $article) : ?>
             <li><?= $article['title'] ?></li>
         <?php endforeach ?>
     </ul>
+
+    <?php $this->load->view('_partials/footer.php'); ?>
 </body>
 
 </html>

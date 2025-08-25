@@ -21,15 +21,27 @@ class Page extends CI_Controller
 	 */
 	public function index()
 	{
-		$this->load->view('home');
+		$data['meta'] = [
+			'title' => 'CodeNews - Home',
+		];
+
+		$this->load->view('home', $data);
 	}
 	public function about()
 	{
-		$this->load->view('about');
+		$data['meta'] = [
+			'title' => 'About CodeNews',
+		];
+
+		$this->load->view('about', $data);
 	}
 
 	public function contact()
 	{
-		$this->load->view('contact');
+		$data['meta'] = [
+			'title' => 'Contact Us',
+		];
+
+		$this->load->view('contact', $data);
 	}
 }

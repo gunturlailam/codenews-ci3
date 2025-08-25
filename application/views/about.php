@@ -2,14 +2,15 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About </title>
+    <?php $this->load->view('_partials/head.php'); ?>
 </head>
 
 <body>
-    <h1>About Us</h1>
-    <p>Ini adalah halaman about</p>
+    <?php $this->load->view('_partials/navbar.php'); ?>
+
+    <h1>About Page</h1>
+
+    <?php $this->load->view('_partials/footer.php'); ?>
 </body>
 
 </html>
